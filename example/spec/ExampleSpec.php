@@ -11,4 +11,10 @@ class ExampleSpec extends ObjectBehavior
     {
         $this->shouldHaveType('Example');
     }
+
+    function it_should_call_bar()
+    {
+        $this->bar()->shouldBeCalled();
+        $this->foo();
+    }
 }

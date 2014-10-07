@@ -1,3 +1,6 @@
+var path = require('path'),
+    spawn = require('child_process').spawn;
+
 module.exports = function(coffeeBreak) {
 	"use strict";
 	
@@ -18,7 +21,7 @@ module.exports = function(coffeeBreak) {
 			return;
 		}
 
-		log.dev('Running PHPSpec tests', conf.project);
+		logger.dev('Running PHPSpec tests', conf.project);
 
 		var args = ['run'];
 		var files = conf.tests;
@@ -28,7 +31,7 @@ module.exports = function(coffeeBreak) {
             args.push(path.join(conf.cwd, file));
         }.bind(this));
 
-        var cmd = path.join(__dirname, './bin/phpspec');
+        var cmd = path.join(conf.cwd, './bin/phpspec');
         var phpspec = spawn(cmd, args);
 
          phpspec.stdout.on('data', function(data) {

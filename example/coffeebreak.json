@@ -1,4 +1,5 @@
 {
 	"project": "phpspec-runner-example",
+    "type": "php",
 	"tests": "spec/**/*Spec.php"
 }
