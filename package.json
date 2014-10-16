@@ -1,0 +1,21 @@
+{
+  "name": "coffeebreak-phpspec-runner",
+  "version": "0.1.0",
+  "description": "Coffeebreak module for PHPSpec",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@kallisto/~/coffeebreak-phpspec-runner.git"
+  },
+  "keywords": [
+    "coffeebreak-plugin"
+  ],
+  "author": "Andi Heinkelein \"AndiOxidant\" <andi.oxidant@noname-media.com>",
+  "license": "MIT"
+}
