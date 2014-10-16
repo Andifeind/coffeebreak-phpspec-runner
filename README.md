@@ -7,6 +7,6 @@ Configuration
 -------------
 
 In your coffeebreak.json
-	{
-		tests: "spec/**/*Spec.php"
-	}
+    {
+        tests: "spec/**/*Spec.php"
+    }
